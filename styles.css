@@ -1,0 +1,470 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+}
+.form{
+    margin: auto;
+    margin-top: 15vh;
+    padding: auto;
+    width: 20em;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2em 2em 1em lightgray;
+    overflow: hidden;
+    background-color: azure;
+}
+#user{
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    overflow: hidden;
+}
+.formInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+#login-submit{
+    width: 66.6%;
+    padding: auto;
+    margin-top: 1em;
+    background-color: cadetblue;
+    border: none;
+    height:2em;
+    box-shadow: 0.3rem 0.3rem 5px rgb(156, 179, 180);
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+.Input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:0.5px solid black;
+    height: 1rem;
+    background-color:inherit;
+    transition:  margin-top 0.4s ease;
+    overflow-x: hidden;
+    font-size: 1rem;
+}
+.formInput label{
+    margin-top: 1em;
+    font-size: 1rem;
+    transition:  font-size 0.4s ease;
+}
+
+.Input:focus{
+    margin-top: 0.3rem;
+    border: none;
+    height: 1.5rem;
+    outline: none;
+    border-bottom: 0.5px solid cadetblue;
+}
+.Input:focus +label{
+    font-size: 12px;
+    color:cadetblue;
+}
+
+#login-submit:hover{
+    background-color:rgb(35, 77, 78);
+    color: white;
+}
+.signup{
+    padding-top: 1rem;
+    color: #000;
+    text-decoration: none;
+}
+.signup:hover{
+    text-decoration: underline;
+}
+.left{
+    width:20vw;
+    height: 100vh;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+.logo{
+    border-radius: 50%;
+    height: 150px;
+    max-width:150px;
+}
+.left li{
+    list-style: none;
+    text-align: center;
+    width:100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    transition: color 1s;
+}
+.left li:hover{
+    color: aliceblue;
+    cursor: pointer;
+}
+.main-nav{
+    width: 80%;
+    height: 100vh;
+    background-color:aliceblue;
+    
+}
+.create{
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    background-color: lightcoral;
+    text-align: center;
+    margin-left: 2rem;
+    margin-top: 4rem;
+    font-size: 2rem;
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+.create i{
+    padding-top: 3.8rem;
+}
+.create:hover{
+    box-shadow: 5px 5px rgb(238, 187, 187);
+    cursor: pointer;
+    transform: translate(0, 5%);
+}
+.new{
+    background-color:#f2e8cf;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.358);
+    position: fixed;
+    top:0;
+    left: 50vw;
+    width: 70%;
+    height: 60%;
+    z-index: 1;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.8s, top 0.8s;
+    border-radius: 3px;
+}
+.moreColorsBigDiv{
+    background-color:#f2e8cf;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.358);
+    position: fixed;
+    top:0;
+    left: 25vw;
+    width: 40%;
+    height: 80%;
+    z-index: 2;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.8s, top 0.8s;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.moreColorsDiv{
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+grid-template-rows: repeat(10, 1fr);
+grid-gap: 10px;
+
+}
+.newList{
+    background-color:#f2e8cf;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.358);
+    position: fixed;
+    top:0;
+    left: 25vw;
+    width: 40%;
+    height: 80%;
+    z-index: 1;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.8s, top 0.8s;
+    border-radius: 3px;
+}
+.myList{
+    background-color:#f2e8cf;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.358);
+    position: fixed;
+    top:0;
+    left: 75vw;
+    width: 40%;
+    height: 80%;
+    z-index: 1;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.8s, top 0.8s;
+    border-radius: 3px;
+}
+.mine{
+   
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.358);
+    position: fixed;
+    top:0;
+    left: 50vw;
+    width: 40%;
+    height: 80%;
+    z-index: 1;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.8s, top 0.8s;
+    border-radius: 3px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+   
+    height: 70%;
+    width: 80%;
+}
+.container div{
+    border-radius: 6px;
+    text-align: center;
+    background-color: #3365a0;
+    width: 30%;
+    height: 50%;
+    padding-top: 6rem;
+    transition:  transform 0.5s;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.358);
+    
+    font-size: 1.3rem;
+}
+.container div:hover{
+    cursor: pointer;
+    transform: translate( 0, -5%);
+}
+.closeX{
+    
+    position: relative;
+    left: 60vw;
+    font-size: 2rem;
+    cursor: pointer;
+    top: 1rem;
+    
+}
+
+.closeX:hover{
+    color:#3365a0;
+    cursor: pointer;
+    
+}
+.closeList{
+    position: relative;
+    left: 35vw;
+    font-size: 2rem;
+    cursor: pointer;
+    top: 1rem;
+}
+.closeList:hover{
+    color:#3365a0;
+    cursor: pointer;
+    
+}
+
+.listForm{
+   padding-left: 3rem;
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+ 
+}
+.listForm label{
+    padding-top: auto;
+    float: left;
+    text-align: left;
+    margin-top: 1rem;
+    width: 6rem;
+    max-width: 5rem;
+    font-weight: bold;
+}
+.listForm input,.listForm select{
+    border: 2px solid #000;
+    margin: 0 0 1em 0;
+    padding: 10px;
+    width:15rem;
+    overflow-x: visible;
+    box-sizing: border-box;
+    float: center;
+    margin-left: 3rem;
+}
+.addDetails{
+    height:2.2rem;
+    border: none;
+    width: 2rem;
+    margin-left: -2.1rem;
+    background-color: lightcoral;
+ 
+}
+.listHeader{
+    text-align: center;
+   
+}
+.lists {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 60%;
+    width:100%;
+    overflow-y: scroll;
+    position: fixed;
+    top: 20vh;
+
+    background-color: brightness(0.85);
+}
+.title{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+.listContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding-left: 10%;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    
+}
+.listDate{
+    text-align: left;
+    padding-left: 3rem;
+}
+.lists::-webkit-scrollbar {
+    width: 10px;
+    
+}
+    
+.lists::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 20px;
+}
+    
+.lists::-webkit-scrollbar-thumb {
+    background: rgba(25, 25, 25, 0.598);
+    border-radius: 20px;
+}
+    
+.lists::-webkit-scrollbar-thumb:hover {
+    background: #000;
+}
+
+.popup{
+    visibility: visible;
+    top: 50vh;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+    .background{
+        width: 30px;
+        height: 30px;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        transition: transform 0.5s, filter 0.5s;
+        border-radius: 4px;
+        border: 1px solid black;
+    }
+    .background:hover{
+        transform: translate(0, -5%);
+        filter:opacity(0.5);
+    }
+
+    .listBackground{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .colors{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+.cols{
+    display: flex;
+    flex-direction: column;
+
+}
+.moreColors{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.moreColors:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.moreText:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.moreColorsDiv1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -10rem;
+    width: 80%;
+    padding-left: 3rem;
+}
+.element{
+    font-weight: bold;
+}
+.delete{
+    border-radius: 3px;
+    border:none;
+}
+
+.saveDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin:0px auto;
+    position: fixed;
+    top: 70vh;
+    left: 5vw;
+}
+.save{
+    width: 6rem;
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: 12px;
+    color : #f2e8cf;
+    background-color: #000;
+}
+.listDiv{
+    width: 10rem;
+    height: 5rem;
+    border-radius: 12px;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.listDiv p {
+    margin-top: -0.5rem;
+}
+.listDiv:hover{
+    filter:opacity(0.85);
+}
+.listsArea{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+    margin-top: 1.5rem;
+}
